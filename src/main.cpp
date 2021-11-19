@@ -59,6 +59,7 @@ void setup() {
   configTime(0, 0, "time.windows.com");
   //configTime(0, 0, "0.se.pool.ntp.org");
   //configTime(0, 0, "time.google.com");
+  
   //And timezone
   setenv("TZ", "<-03>3", 1);
   tzset();
