@@ -14,7 +14,7 @@
 #endif // !WIFI_CONFIG_H
 
 //Pin for bell ringing (on ESP-01s relay shield is GPIO0)
-#define BELL_PIN 2
+#define BELL_PIN 0
 
 //WebServer for OTA updates and webinfo
 AsyncWebServer server(80);
