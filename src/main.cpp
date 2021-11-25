@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <ESP8266TimeAlarms.h>
-#include <ESP8266WiFi.h>
-#include <ESPAsyncTCP.h>
-#include <ESPAsyncWebServer.h>
+//#include <ESP8266WiFi.h>
+//#include <ESPAsyncTCP.h>
+//#include <ESPAsyncWebServer.h>
 #include <AsyncElegantOTA.h>
 
 
@@ -83,7 +83,7 @@ void setup() {
 
   //Start http server
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
-    request->send(200, "text/plain", "Hola Juan Carlos, como estas chupapijas?");
+    request->send(200, "text/plain", "Sirena V1.1");
   });
   
   AsyncElegantOTA.begin(&server);    // Start ElegantOTA binded to server
